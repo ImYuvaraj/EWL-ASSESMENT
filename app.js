@@ -6,6 +6,8 @@ const fetchdata = () => {
         promise.push(fetch(url),then((res) => res.json()))
 
     }
+    
+
 
 async function getapi(url) {
 
@@ -37,7 +39,6 @@ let tab =
     <th>Salary</th>
     </tr>`;
 
-// Loop to access all rows
 for (let r of data.list) {
     tab += `<tr>
 <td>${r.name} </td>
@@ -46,6 +47,6 @@ for (let r of data.list) {
 <td>${r.salary}</td>		
 </tr>`;
 }
-// Setting innerHTML as tab variable
+
 document.getElementById("employees").innerHTML = tab;
 }

@@ -67,12 +67,9 @@ body {
     border: 1px solid #ccc;  
   }
 }
-url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600);
-
 *{box-sizing:border-box;}
 {
-  font-family: 'open sans', helvetica, arial, sans;
-background:url(http://farm8.staticflickr.com/7064/6858179818_5d652f531c_h.jpg) no-repeat center center fixed; 
+  font-family: 'open sans', helvetica, arial;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -184,9 +181,10 @@ transform: translate(0%,0%);
     &:active{ 
     }
   }
-  b{
+  .btn{
     text-align: center;
     text-size-adjust: 10px;
+  }
   }
   
 }
@@ -200,18 +198,17 @@ transform: translate(0%,0%);
             <a class="active" href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-            <b>Login</b>
             <input type="text" placeholder="Search..">
           </div>  
           <div class="log-form">
             <h2>Login to your account</h2>
             <form>
-              <input type="text" title="username" placeholder="username" />
-              <input type="password" title="username" placeholder="password" />
-              <button type="submit" class="btn">Login</button>
+              <input type="text" title="username" placeholder="username" /><br>
+              <input type="password" title="username" placeholder="password" /><br>
+              <button type="submit" class="btn">Login</button><br>
               <a class="forgot" href="#">Forgot Username?</a>
             </form>
-          </div><!--end log form --> 
+          </div>
               
         </div> 
     </form>     
